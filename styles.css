@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Import Roboto google font */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+#main-container {
+}
+
+/* Main Doc */
+#main-doc {
+    margin-left: 350px;
+    margin-top: 0px;
+}
+
+/* Navbar is sidebar always to the left */
+#navbar {
+    position: fixed;
+    top: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding: 0 16px;
+    width: 335px;
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.navbar-title {
+    margin-top: 16px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: #222;
+}
+
+a:link,
+a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    text-align: left;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+.navbar-menu > li {
+    padding-left: 10px;
+    padding: 5px 0;
+    margin: 1rem 0;
+    /* border-top: 1px solid #777; */
+    border-bottom: 1px solid #777;
+    border-right: unset;
+    list-style: none;
+}
+
+/* Main Section */
+.main-section {
+    padding: 1rem 2rem;
+}
+
+.main-section > header {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.main-section > div.content {
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin: 1rem 0;
+}
+
+.content > p {
+    margin: 1rem 0;
+    padding: 0 1rem;
+}
+
+.content > ul {
+    margin: 1rem 0;
+    list-style: disc;
+    padding-left: 5rem;
+}
+
+ul > li {
+    margin: 1rem 0;
+}
+
+li > ul {
+    margin: 1rem 0;
+    list-style: circle;
+    padding-left: 5rem;
+}
+
+code {
+    display: inline-block;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    background-color: #f1f1f1;
+    padding: 1rem;
+    font-size: 0.9rem;
+    display: inline-block;
+    width: 90%;
+    white-space: pre-line;
+}
+
+@media screen and (max-width: 992px) {
+    #main-doc {
+        margin-left: 0;
+    }
+
+    #navbar {
+        width: 100%;
+        position: relative;
+        padding: 0;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border: unset;
+        height: 250px;
+    }
+
+    .navbar-title {
+        text-align: center;
+    }
+
+    .navbar-menu {
+        padding: 0 1rem;
+        overflow: auto;
+        border: 1px solid #777;
+        border-radius: 0.5rem;
+        height: 20vh;
+    }
+}
